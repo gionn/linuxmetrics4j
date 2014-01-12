@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.gionn.linuxmetrics4j</groupId>
 	<artifactId>metrics-core</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<dependencies>
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -46,6 +46,6 @@
 	</distributionManagement>
 	<scm>
 		<developerConnection>scm:git:ssh://git@github.com/gionn/linuxmetrics4j.git</developerConnection>
-	  <tag>metrics-core-0.0.1</tag>
+	  <tag>HEAD</tag>
   </scm>
 </project>
