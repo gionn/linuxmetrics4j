@@ -8,7 +8,7 @@ import net.gionn.linuxmetrics4j.entity.MemoryUsage;
 import net.gionn.linuxmetrics4j.entity.NetworkUsage;
 import net.gionn.linuxmetrics4j.readers.ProcReaderException;
 
-public interface LinuxStatsClient
+public interface LinuxMetricsClient
 {
     LoadAverage getLoadAverage () throws ProcReaderException;
 

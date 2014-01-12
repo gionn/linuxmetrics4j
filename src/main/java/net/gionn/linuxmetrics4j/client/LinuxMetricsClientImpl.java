@@ -15,7 +15,7 @@ import net.gionn.linuxmetrics4j.entity.NetworkUsage;
 import net.gionn.linuxmetrics4j.readers.ProcReaderException;
 import net.gionn.linuxmetrics4j.readers.ReaderFactory;
 
-public class LinuxStatsClientImpl implements LinuxStatsClient
+public class LinuxMetricsClientImpl implements LinuxMetricsClient
 {
     @Override
     public LoadAverage getLoadAverage () throws ProcReaderException
@@ -104,7 +104,7 @@ public class LinuxStatsClientImpl implements LinuxStatsClient
 
     public static void main ( String[] args ) throws ProcReaderException
     {
-        LinuxStatsClient client = new LinuxStatsClientImpl();
+        LinuxMetricsClient client = new LinuxMetricsClientImpl();
 
         CpuUsage cpuUsage = client.getCpuUsage();
         Integer count = cpuUsage.getCoreCount();

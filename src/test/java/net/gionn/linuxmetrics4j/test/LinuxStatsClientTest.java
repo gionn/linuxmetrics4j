@@ -2,8 +2,8 @@ package net.gionn.linuxmetrics4j.test;
 
 import java.util.List;
 
-import net.gionn.linuxmetrics4j.client.LinuxStatsClient;
-import net.gionn.linuxmetrics4j.client.LinuxStatsClientImpl;
+import net.gionn.linuxmetrics4j.client.LinuxMetricsClient;
+import net.gionn.linuxmetrics4j.client.LinuxMetricsClientImpl;
 import net.gionn.linuxmetrics4j.entity.CpuUsage;
 import net.gionn.linuxmetrics4j.entity.LoadAverage;
 import net.gionn.linuxmetrics4j.entity.MemoryUsage;
@@ -17,12 +17,12 @@ import static org.junit.Assert.assertTrue;
 public class LinuxStatsClientTest
 {
 
-    private LinuxStatsClient client;
+    private LinuxMetricsClient client;
 
     @Before
     public void setup ()
     {
-        client = new LinuxStatsClientImpl();
+        client = new LinuxMetricsClientImpl();
     }
 
     @Test
