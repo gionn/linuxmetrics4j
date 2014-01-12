@@ -39,6 +39,26 @@ Usage
 
 ```
 
+Maven repository
+================
+
+Add to your pom.xml:
+```xml
+<repositories>
+	<repository>
+		<id>github.linuxmetrics4j.repo</id>
+		<url>https://raw.github.com/gionn/linuxmetrics4j/mvn-repo/</url>
+	</repository>
+</repositories>
+<dependencies>
+		<dependency>
+		<groupId>net.gionn.linuxmetrics4j</groupId>
+		<artifactId>metrics-core</artifactId>
+		<version>0.0.1</version>
+	</dependency>
+</dependencies>
+```
+
 Contribute
 ==========
 
